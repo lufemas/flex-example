@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700&display=swap');
+
+/* Reset Properties */
+body {
+    margin: 0;
+    font: 1em helvetica, arial, sans-serif
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0;
+}
+
+
+/* Applies Styles */
+.sun { background-color: tomato;}
+.mon { background-color: orange;}
+.tue { background-color: yellow;}
+.wed { background-color: green;}
+.thu { background-color: blue; color: white;}
+.fri { background-color: purple;color: white;}
+.sat { background-color: violet;}
+
+.weeknum {
+    text-align: center;
+    line-height: 2;
+    font-size: 1.25;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', helvetica, arial, sans-serif;
+    font-weight: 700;
+}
+
+.dow {
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', helvetica, arial, sans-serif;
+    font-weight: 700;
+}
+
+.week {
+    background-color: lightgray;
+    display: flex;
+    min-height: 10em;
+    /* flex-direction: row; */
+}
+
+.day {
+    flex-basis: calc(100%/7);
+    margin: 0 0.5em;
+}
+
+.box-sec{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    background-color: lightgray;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 0.7em;
+    align-items: flex-start;
+}
+
+.box-sec a {
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    width: 7.5em;
+}
+
+.box-sec a:hover {
+    background-color: gray;
+    padding: 0.7em;
+
+    color: black;
+    text-decoration: none;
+}
+
+.box-sec a:active {
+    background-color: black;
+    padding: 0.2em;
+
+    color: white;
+    text-decoration: none;
+}
+
+.img-div{
+    flex-basis: 30%;
+    background-color: red;
+}
+
+.img-div img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.text-div {
+    background-color: green;
+    padding: 0.5em;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.text-div p {
+    background-color: white;
+    flex-grow: 1;
+}
